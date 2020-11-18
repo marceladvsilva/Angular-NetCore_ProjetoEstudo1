@@ -10,20 +10,30 @@ import { CommonModule } from '@angular/common';
 import { PerfilComponent } from './perfil/perfil.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavComponent } from './nav/nav.component';
+import { TituloComponent } from './titulo/titulo.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [				
+  declarations: [					
     AppComponent,
     AlunosComponent,
     ProfessoresComponent,
       PerfilComponent,
       DashboardComponent,
-      NavComponent
+      NavComponent,
+      TituloComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonModule
+    CommonModule,
+    BrowserAnimationsModule,
+    BsDropdownModule.forRoot(),
+    FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -31,3 +41,4 @@ import { NavComponent } from './nav/nav.component';
 export class AppModule { }
 export class AlunosModule { } //necessário declarar os componentes aqui p/ que o for funcione
 export class ProfessoresModule { }
+export class  TituloModule { }
