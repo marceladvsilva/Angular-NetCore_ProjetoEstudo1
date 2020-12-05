@@ -19,72 +19,72 @@ namespace SmartSchool_WebAPI.Migrations
 
             modelBuilder.Entity("SmartSchool_WebAPI.Models.Aluno", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("nome")
+                    b.Property<string>("Nome")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("sobrenome")
+                    b.Property<string>("Sobrenome")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("telefone")
+                    b.Property<string>("Telefone")
                         .HasColumnType("TEXT");
 
-                    b.HasKey("id");
+                    b.HasKey("Id");
 
                     b.ToTable("Alunos");
 
                     b.HasData(
                         new
                         {
-                            id = 1,
-                            nome = "Marta",
-                            sobrenome = "Kent",
-                            telefone = "33225555"
+                            Id = 1,
+                            Nome = "Marta",
+                            Sobrenome = "Kent",
+                            Telefone = "33225555"
                         },
                         new
                         {
-                            id = 2,
-                            nome = "Paula",
-                            sobrenome = "Isabela",
-                            telefone = "3354288"
+                            Id = 2,
+                            Nome = "Paula",
+                            Sobrenome = "Isabela",
+                            Telefone = "3354288"
                         },
                         new
                         {
-                            id = 3,
-                            nome = "Laura",
-                            sobrenome = "Antonia",
-                            telefone = "55668899"
+                            Id = 3,
+                            Nome = "Laura",
+                            Sobrenome = "Antonia",
+                            Telefone = "55668899"
                         },
                         new
                         {
-                            id = 4,
-                            nome = "Luiza",
-                            sobrenome = "Maria",
-                            telefone = "6565659"
+                            Id = 4,
+                            Nome = "Luiza",
+                            Sobrenome = "Maria",
+                            Telefone = "6565659"
                         },
                         new
                         {
-                            id = 5,
-                            nome = "Lucas",
-                            sobrenome = "Machado",
-                            telefone = "565685415"
+                            Id = 5,
+                            Nome = "Lucas",
+                            Sobrenome = "Machado",
+                            Telefone = "565685415"
                         },
                         new
                         {
-                            id = 6,
-                            nome = "Pedro",
-                            sobrenome = "Alvares",
-                            telefone = "456454545"
+                            Id = 6,
+                            Nome = "Pedro",
+                            Sobrenome = "Alvares",
+                            Telefone = "456454545"
                         },
                         new
                         {
-                            id = 7,
-                            nome = "Paulo",
-                            sobrenome = "José",
-                            telefone = "9874512"
+                            Id = 7,
+                            Nome = "Paulo",
+                            Sobrenome = "José",
+                            Telefone = "9874512"
                         });
                 });
 
@@ -222,7 +222,7 @@ namespace SmartSchool_WebAPI.Migrations
 
             modelBuilder.Entity("SmartSchool_WebAPI.Models.Disciplina", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -232,7 +232,7 @@ namespace SmartSchool_WebAPI.Migrations
                     b.Property<int>("ProfessorId")
                         .HasColumnType("INTEGER");
 
-                    b.HasKey("id");
+                    b.HasKey("Id");
 
                     b.HasIndex("ProfessorId");
 
@@ -241,31 +241,31 @@ namespace SmartSchool_WebAPI.Migrations
                     b.HasData(
                         new
                         {
-                            id = 1,
+                            Id = 1,
                             Nome = "Matemática",
                             ProfessorId = 1
                         },
                         new
                         {
-                            id = 2,
+                            Id = 2,
                             Nome = "Física",
                             ProfessorId = 2
                         },
                         new
                         {
-                            id = 3,
+                            Id = 3,
                             Nome = "Português",
                             ProfessorId = 3
                         },
                         new
                         {
-                            id = 4,
+                            Id = 4,
                             Nome = "Inglês",
                             ProfessorId = 4
                         },
                         new
                         {
-                            id = 5,
+                            Id = 5,
                             Nome = "Programação",
                             ProfessorId = 5
                         });
@@ -273,42 +273,42 @@ namespace SmartSchool_WebAPI.Migrations
 
             modelBuilder.Entity("SmartSchool_WebAPI.Models.Professor", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("nome")
+                    b.Property<string>("Nome")
                         .HasColumnType("TEXT");
 
-                    b.HasKey("id");
+                    b.HasKey("Id");
 
                     b.ToTable("Professores");
 
                     b.HasData(
                         new
                         {
-                            id = 1,
-                            nome = "Lauro"
+                            Id = 1,
+                            Nome = "Lauro"
                         },
                         new
                         {
-                            id = 2,
-                            nome = "Roberto"
+                            Id = 2,
+                            Nome = "Roberto"
                         },
                         new
                         {
-                            id = 3,
-                            nome = "Ronaldo"
+                            Id = 3,
+                            Nome = "Ronaldo"
                         },
                         new
                         {
-                            id = 4,
-                            nome = "Rodrigo"
+                            Id = 4,
+                            Nome = "Rodrigo"
                         },
                         new
                         {
-                            id = 5,
-                            nome = "Alexandre"
+                            Id = 5,
+                            Nome = "Alexandre"
                         });
                 });
 
