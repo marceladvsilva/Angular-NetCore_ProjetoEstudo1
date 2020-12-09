@@ -17,7 +17,7 @@ namespace SmartSchool_WebAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAction()
+        public async Task<IActionResult> Get()
         {
             try
             {
@@ -44,19 +44,19 @@ namespace SmartSchool_WebAPI.Controllers
             } 
         }
 
-        //  [HttpGet("ByDisciplina/{disciplinaId}")]
-        // public async Task<IActionResult> GetByDisciplinaId(int DisciplinaId)
-        // {
-        //     try
-        //     {
-        //         var result = await _repo.GetAlunosAsyncByDisciplinaId(DisciplinaId, false);
-        //         return Ok(result);
-        //     }
-        //     catch (System.Exception ex)
-        //     { 
-        //         return BadRequest($"Erro: {ex.Message}");
-        //     } 
-        // }
+         [HttpGet("ByAluno/{alunoId}")]
+        public async Task<IActionResult> GetByAlunoId(int alunoId)
+        {
+            try
+            {
+                var result = await _repo.GetProfessoresAsyncByAlunoId(alunoId, false);
+                return Ok(result);
+            }
+            catch (System.Exception ex)
+            { 
+                return BadRequest($"Erro: {ex.Message}");
+            } 
+        }
 
         [HttpPost]
         public async Task<IActionResult> post(Professor model)
