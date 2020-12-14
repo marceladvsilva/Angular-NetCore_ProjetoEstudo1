@@ -1,6 +1,17 @@
 export class Aluno {
-    id:number | undefined;
+
+    constructor() {
+        this.id = 0;
+        this.nome = '';
+        this.sobrenome = '';
+        this.telefone = 0;
+    }
+
+    id!: number;
     nome: string| undefined;
     sobrenome: string| undefined;
     telefone: number| undefined;
 }
+
+
+
